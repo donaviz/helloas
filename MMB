@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng hiệu quả Internet và mạng xã hội</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            animation: slide-in 1s ease-out;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header h2 {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+        nav {
+            background-color: #FFC0CB;
+            overflow: hidden;
+            border-bottom: 2px solid #000000;
+            animation: fade-in 1.5s ease-in;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #dcdcdc;
+            color: #333333;
+        }
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #FFC0CB;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: slide-up 1s ease-out;
+        }
+        section h2 {
+            color: #000000;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FFC0CB;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+        section p, section ul, section ol {
+            margin: 15px 0;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            animation: fade-in 2s ease-in;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: zoom-in 1.5s ease-out;
+        }
+        audio, video {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            animation: slide-up 1s ease-out;
+        }
+        .next-button {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .next-button a {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .next-button a:hover {
+            background-color: #333333;
+        }
+        section.content-block {
+            margin-bottom: 40px;
+        }
+        /* Thanh phím tắt dọc */
+        .shortcut-bar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #000000;
+            color: white;
+            overflow-x: hidden;
+            transform: translateX(-250px);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        }
+        .shortcut-bar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #333333;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .shortcut-bar a:hover {
+            background-color: #555555;
+        }
+        .shortcut-bar.active {
+            transform: translateX(0);
+        }
+        .toggle-shortcut {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        /* Keyframe Animations */
+        @keyframes slide-in {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slide-up {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoom-in {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle-shortcut">Phím tắt</div>
+    <div class="shortcut-bar">
+        <h3>Phím tắt</h3>
+        <a href="#khai-niem">Khái niệm</a>
+        <a href="#noi-dung">Nội dung</a>
+        <a href="#bien-phap">Biện pháp thực hiện</a>
+        <a href="#tai-nguyen">Tài nguyên</a>
+    </div>
+
+    <header>
+        <h1>Sử dụng hiệu quả Internet và mạng xã hội</h1>
+        <h2>Trong giải trí và học tập</h2>
+    </header>
+    <nav>
+        <a href="#khai-niem">Khái niệm</a>
+        <a href="#noi-dung">Nội dung</a>
+        <a href="#bien-phap">Biện pháp thực hiện</a>
+        <a href="#tai-nguyen">Tài nguyên</a>
+    </nav>
+<section class="content-block">
+ 	<p> Audio: </p>
+	<audio controls>
+            <source src="D:\Downloads\luvvoice.com-20241223-zYkLI7.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+	</section>    
+<section id="khai-niem" class="content-block">
+        <h2>Khái niệm</h2>
+        <p><b>Internet</b> là một hệ thống mạng toàn cầu kết nối hàng triệu thiết bị. Nó cho phép chia sẻ và truy cập thông tin một cách nhanh chóng.</p>
+        <p><b>Mạng xã hội</b> là các nền tảng trực tuyến giúp mọi người giao tiếp, kết nối và chia sẻ thông tin một cách thuận tiện.</p>
+        <p>Các ví dụ phổ biến: Facebook, Instagram, TikTok và YouTube.</p>
+        <img src="images/khai-niem.jpg" alt="Hình ảnh minh họa khái niệm">
+        <div class="next-button">
+            <a href="#noi-dung">Tiếp theo</a>
+        </div>
+    </section>
+    <section id="noi-dung" class="content-block">
+        <h2>Nội dung</h2>
+        <h3>Sử dụng Internet</h3>
+        <ul>
+            <li>Tìm kiếm thông tin nhanh chóng và chính xác.</li>
+            <li>Truy cập các tài liệu học tập và nghiên cứu.</li>
+            <li>Tham gia các khóa học trực tuyến với chi phí hợp lý.</li>
+        </ul>
+        <img src="images/su-dung-internet.jpg" alt="Hình ảnh sử dụng Internet">
+        <h3>Sử dụng mạng xã hội</h3>
+        <ul>
+            <li>Kết nối với bạn bè và gia đình, bất kể khoảng cách.</li>
+            <li>Chia sẻ ý tưởng, trải nghiệm cá nhân và nội dung sáng tạo.</li>
+            <li>Tham gia vào các cộng đồng có chung sở thích để học hỏi thêm.</li>
+        </ul>
+        <img src="images/mang-xa-hoi.jpg" alt="Hình ảnh mạng xã hội">
+        <div class="next-button">
+            <a href="#bien-phap">Tiếp theo</a>
+        </div>
+    </section>
+    <section id="bien-phap" class="content-block">
+        <h2>Biện pháp thực hiện</h2>
+        <ol>
+            <li>Sử dụng thời gian hợp lý: Hạn chế lạm dụng và tập trung vào những nội dung bổ ích.</li>
+            <li>Kiểm soát chất lượng nội dung: Tránh các thông tin sai lệch hoặc gây hại.</li>
+            <li>Tạo danh sách các mục tiêu học tập và giải trí cụ thể.</li>
+            <li>Sử dụng công cụ hỗ trợ như ứng dụng quản lý thời gian hoặc theo dõi nội dung.</li>
+        </ol>
+        <img src="images/bien-phap.jpg" alt="Hình ảnh minh họa biện pháp">
+        <div class="next-button">
+            <a href="#tai-nguyen">Tiếp theo</a>
+        </div>
+    </section>
+    <section id="tai-nguyen" class="content-block">
+        <h2>Tài nguyên</h2>
+        <p>Hình ảnh minh họa:</p>
+        <img src="images/internet.jpg" alt="Hình ảnh minh họa Internet">
+        <p>Âm thanh hướng dẫn:</p>
+        <audio controls>
+            <source src="audio/huongdan.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+        <p>Video hướng dẫn:</p>
+        <video controls>
+            <source src="videos/huongdan.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video.
+        </video>
+    </section>
+    <footer>
+        <p>&copy; 2024 - Sử dụng hiệu quả Internet và mạng xã hội</p>
+    </footer>
+    <script>
+        const toggleShortcut = document.querySelector('.toggle-shortcut');
+        const shortcutBar = document.querySelector('.shortcut-bar');
+
+        toggleShortcut.addEventListener('click', () => {
+            shortcutBar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
